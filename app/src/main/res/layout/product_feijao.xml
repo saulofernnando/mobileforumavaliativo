@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#c2c2c2">
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feijão"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_below="@id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor: R$ 10,00"
+        android:textSize="8pt"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/productQnt"
+        android:layout_below="@id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtdade: 15"
+        android:textSize="8pt"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/productMarca"
+        android:layout_alignBaseline="@id/productPrice"
+        android:layout_toEndOf="@id/productPrice"
+        android:layout_marginStart="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca: Vasconcelos"
+        android:textSize="8pt"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/productRef"
+        android:layout_alignBaseline="@id/productQnt"
+        android:layout_alignLeft="@id/productMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref: 002"
+        android:textSize="8pt"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/productDesc"
+        android:layout_below="@id/productQnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="5% de desconto"
+        android:background="#71b952"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/productLeve"
+        android:layout_toEndOf="@id/productDesc"
+        android:layout_alignBaseline="@id/productDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Leve 6 pague 5"
+        android:background="#ff8353"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
